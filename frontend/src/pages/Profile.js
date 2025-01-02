@@ -8,7 +8,7 @@ import { Line, Pie } from 'react-chartjs-2';
 import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 
-const DUMMY_DATA = true;
+const DUMMY_DATA = false;
 
 export default function Profile()
 {
