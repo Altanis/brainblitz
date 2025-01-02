@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+
+    /* background: linear-gradient(to right, #38b2ac, #3b82f6); */
+    /* background: rgb(241 245 249); */
+    background: rgb(15, 23, 43);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+}  
+
+html {
+  overflow: hidden;
+}
+
+/* Create a thin scrollbar track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+  /* Create a scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #565869;
+    border-radius: 5px;
+  }
+  
+  /* Increase the width of the scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }  

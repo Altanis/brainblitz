@@ -1,0 +1,31 @@
+{
+  "name": "ok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/index.js",
+  "scripts": {
+    "build:backend": "tsc -p tsconfig.json",
+    "start:backend": "npm run build:backend && node api/index.js",
+    "build:frontend": "cd frontend && npm run build",
+    "start:frontend": "cd frontend && npm run start",
+    "start": "pm2 start \"npm run start:frontend\" --name \"frontend\" && pm2 start \"npm run start:backend\" --name \"backend\""
+  },
+  "author": "Altanis",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1",
+    "openai": "^3.3.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.3",
+    "@types/ws": "^8.5.5"
+  }
+}
